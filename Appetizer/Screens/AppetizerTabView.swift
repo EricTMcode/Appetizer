@@ -9,13 +9,23 @@ import SwiftUI
 
 struct AppetizerTabView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView {
+            AppetizerListView()
+                .tabItem {
+                    Label("Home", systemImage: "house")
+                }
+            
+            AccountView()
+                .tabItem {
+                    Label("Account", systemImage: "person")
+                }
+            
+            OrderView()
+                .tabItem {
+                    Label("Order", systemImage: "bag")
+                }
         }
-        .padding()
+        .tint(.brandPrimary)
     }
 }
 

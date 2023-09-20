@@ -8,8 +8,25 @@
 import SwiftUI
 
 struct AppetizerListView: View {
+    
+    @StateObject var vm = AppetizerListViewModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            List(vm.appetizers) { appetizer in
+                AppetizerListCell(appetizer: appetizer)
+            }
+            .navigationTitle("🍟 Appetizers")
+            .listStyle(.plain)
+        }
+        .task {
+            vm.getAppetizers()
+        }
+        .alert(item: $vm.alertItem) { alertItem in
+            Alert(title: alertItem.title,
+                  message: alertItem.message,
+                  dismissButton: alertItem.dismiss)
+        }
     }
 }
 

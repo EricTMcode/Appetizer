@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  AppetizerTabView.swift
 //  Appetizer
 //
 //  Created by Eric on 20/09/2023.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct AppetizerTabView: View {
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -20,5 +20,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    AppetizerTabView()
 }

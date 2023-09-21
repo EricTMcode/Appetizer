@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07109BC32ABC6E70006D7AD7 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07109BC22ABC6E70006D7AD7 /* LoadingView.swift */; };
 		07D9F9F42ABB1E5E00ABE788 /* AppetizerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D9F9F32ABB1E5E00ABE788 /* AppetizerApp.swift */; };
 		07D9F9F62ABB1E5E00ABE788 /* AppetizerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D9F9F52ABB1E5E00ABE788 /* AppetizerTabView.swift */; };
 		07D9F9F82ABB1E5F00ABE788 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07D9F9F72ABB1E5F00ABE788 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07109BC22ABC6E70006D7AD7 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		07D9F9F02ABB1E5E00ABE788 /* Appetizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appetizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07D9F9F32ABB1E5E00ABE788 /* AppetizerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerApp.swift; sourceTree = "<group>"; };
 		07D9F9F52ABB1E5E00ABE788 /* AppetizerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerTabView.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				07D9FA122ABB344E00ABE788 /* AppetizerListViewModel.swift */,
 				07D9FA052ABB1F5300ABE788 /* AccountView.swift */,
 				07D9FA072ABB1F5900ABE788 /* OrderView.swift */,
+				07109BC22ABC6E70006D7AD7 /* LoadingView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				07D9FA0D2ABB2AC800ABE788 /* AppetizerListCell.swift in Sources */,
 				07D9FA132ABB344E00ABE788 /* AppetizerListViewModel.swift in Sources */,
 				07D9FA062ABB1F5300ABE788 /* AccountView.swift in Sources */,
+				07109BC32ABC6E70006D7AD7 /* LoadingView.swift in Sources */,
 				07D9F9F62ABB1E5E00ABE788 /* AppetizerTabView.swift in Sources */,
 				07D9FA0F2ABB2B9200ABE788 /* NetworkManager.swift in Sources */,
 				07D9F9F42ABB1E5E00ABE788 /* AppetizerApp.swift in Sources */,

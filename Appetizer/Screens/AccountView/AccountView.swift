@@ -15,15 +15,15 @@ struct AccountView: View {
         NavigationStack {
             Form {
                 Section {
-                    TextField("First Name", text: $vm.firstName)
-                    TextField("Last Name", text: $vm.lastName)
-                    TextField("Email", text: $vm.email)
+                    TextField("First Name", text: $vm.user.firstName)
+                    TextField("Last Name", text: $vm.user.lastName)
+                    TextField("Email", text: $vm.user.email)
                         .keyboardType(.emailAddress)
                         .autocapitalization(.none)
                         .textInputAutocapitalization(.never)
                         .autocorrectionDisabled()
                     
-                    DatePicker("Birthday", selection: $vm.birthdate, displayedComponents: .date)
+                    DatePicker("Birthday", selection: $vm.user.birthdate, displayedComponents: .date)
                     
                     Button {
                         vm.saveChanges()
@@ -35,14 +35,17 @@ struct AccountView: View {
                 }
                
                 Section {
-                    Toggle("Extra Napkins", isOn: $vm.extraNapkins)
-                    Toggle("Frequent Refills", isOn: $vm.frequentRefills)
+                    Toggle("Extra Napkins", isOn: $vm.user.extraNapkins)
+                    Toggle("Frequent Refills", isOn: $vm.user.frequentRefills)
                 } header: {
                     Text("Requests")
                 }
                 .tint(.brandPrimary)
             }
                 .navigationTitle("🤣 Account")
+        }
+        .task {
+            vm.retrieveUser()
         }
         .alert(item: $vm.alertItem) { AlertItem in
             Alert(title: AlertItem.title, message: AlertItem.message, dismissButton: AlertItem.dismiss)

@@ -10,6 +10,8 @@
 		07109BC32ABC6E70006D7AD7 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07109BC22ABC6E70006D7AD7 /* LoadingView.swift */; };
 		07109BC72ABC7946006D7AD7 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07109BC62ABC7946006D7AD7 /* RemoteImage.swift */; };
 		07109BD62ABDC362006D7AD7 /* AppetizerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07109BD52ABDC362006D7AD7 /* AppetizerDetailView.swift */; };
+		07109BD92ABDCC65006D7AD7 /* APButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07109BD82ABDCC65006D7AD7 /* APButton.swift */; };
+		07109BDB2ABDCCFA006D7AD7 /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07109BDA2ABDCCFA006D7AD7 /* XDismissButton.swift */; };
 		07D9F9F42ABB1E5E00ABE788 /* AppetizerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D9F9F32ABB1E5E00ABE788 /* AppetizerApp.swift */; };
 		07D9F9F62ABB1E5E00ABE788 /* AppetizerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D9F9F52ABB1E5E00ABE788 /* AppetizerTabView.swift */; };
 		07D9F9F82ABB1E5F00ABE788 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07D9F9F72ABB1E5F00ABE788 /* Assets.xcassets */; };
@@ -29,6 +31,8 @@
 		07109BC22ABC6E70006D7AD7 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		07109BC62ABC7946006D7AD7 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 		07109BD52ABDC362006D7AD7 /* AppetizerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerDetailView.swift; sourceTree = "<group>"; };
+		07109BD82ABDCC65006D7AD7 /* APButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APButton.swift; sourceTree = "<group>"; };
+		07109BDA2ABDCCFA006D7AD7 /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
 		07D9F9F02ABB1E5E00ABE788 /* Appetizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appetizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07D9F9F32ABB1E5E00ABE788 /* AppetizerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerApp.swift; sourceTree = "<group>"; };
 		07D9F9F52ABB1E5E00ABE788 /* AppetizerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerTabView.swift; sourceTree = "<group>"; };
@@ -140,6 +144,15 @@
 			path = Image;
 			sourceTree = "<group>";
 		};
+		07109BD72ABDCC55006D7AD7 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				07109BD82ABDCC65006D7AD7 /* APButton.swift */,
+				07109BDA2ABDCCFA006D7AD7 /* XDismissButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
 		07D9F9E72ABB1E5E00ABE788 = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +205,7 @@
 		07D9FA022ABB1EFE00ABE788 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				07109BD72ABDCC55006D7AD7 /* Buttons */,
 				07109BD12ABC7FD5006D7AD7 /* Image */,
 				07109BD02ABC7FCD006D7AD7 /* Cells */,
 				07109BCF2ABC7FC2006D7AD7 /* UIKit Components */,
@@ -280,6 +294,7 @@
 				07D9FA0B2ABB241100ABE788 /* Appetizer.swift in Sources */,
 				07D9FA112ABB2C9100ABE788 /* APError.swift in Sources */,
 				07D9FA0D2ABB2AC800ABE788 /* AppetizerListCell.swift in Sources */,
+				07109BD92ABDCC65006D7AD7 /* APButton.swift in Sources */,
 				07D9FA132ABB344E00ABE788 /* AppetizerListViewModel.swift in Sources */,
 				07D9FA062ABB1F5300ABE788 /* AccountView.swift in Sources */,
 				07109BC32ABC6E70006D7AD7 /* LoadingView.swift in Sources */,
@@ -291,6 +306,7 @@
 				07D9FA152ABB363500ABE788 /* Alert.swift in Sources */,
 				07D9FA042ABB1F4900ABE788 /* AppetizerListView.swift in Sources */,
 				07D9FA082ABB1F5900ABE788 /* OrderView.swift in Sources */,
+				07109BDB2ABDCCFA006D7AD7 /* XDismissButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -24,9 +24,9 @@ struct AppetizerListView: View {
                 vm.getAppetizers()
             }
             
-//            if vm.isLoading {
-//                LoadingView()
-//            }
+            if vm.isLoading {
+                LoadingView()
+            }
         }
         .alert(item: $vm.alertItem) { alertItem in
             Alert(title: alertItem.title,

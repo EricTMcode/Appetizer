@@ -9,29 +9,24 @@ import SwiftUI
 
 struct AccountView: View {
     
-    @State private var firstName = ""
-    @State private var lastName = ""
-    @State private var email = ""
-    @State private var birthdate = Date()
-    @State private var extraNapkins = false
-    @State private var frequentRefills = false
+    @StateObject private var vm = AccountViewModel()
     
     var body: some View {
         NavigationStack {
             Form {
                 Section {
-                    TextField("First Name", text: $firstName)
-                    TextField("Last Name", text: $lastName)
-                    TextField("Email", text: $email)
+                    TextField("First Name", text: $vm.firstName)
+                    TextField("Last Name", text: $vm.lastName)
+                    TextField("Email", text: $vm.email)
                         .keyboardType(.emailAddress)
                         .autocapitalization(.none)
                         .textInputAutocapitalization(.never)
                         .autocorrectionDisabled()
                     
-                    DatePicker("Birthday", selection: $birthdate, displayedComponents: .date)
+                    DatePicker("Birthday", selection: $vm.birthdate, displayedComponents: .date)
                     
                     Button {
-                        print("Save")
+                        vm.saveChanges()
                     } label: {
                         Text("Save Changes")
                     }
@@ -40,14 +35,17 @@ struct AccountView: View {
                 }
                
                 Section {
-                    Toggle("Extra Napkins", isOn: $extraNapkins)
-                    Toggle("Frequent Refills", isOn: $frequentRefills)
+                    Toggle("Extra Napkins", isOn: $vm.extraNapkins)
+                    Toggle("Frequent Refills", isOn: $vm.frequentRefills)
                 } header: {
                     Text("Requests")
                 }
                 .tint(.brandPrimary)
             }
                 .navigationTitle("🤣 Account")
+        }
+        .alert(item: $vm.alertItem) { AlertItem in
+            Alert(title: AlertItem.title, message: AlertItem.message, dismissButton: AlertItem.dismiss)
         }
     }
 }

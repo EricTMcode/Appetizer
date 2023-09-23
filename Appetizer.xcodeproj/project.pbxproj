@@ -15,6 +15,8 @@
 		07109BDD2ABDD391006D7AD7 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07109BDC2ABDD391006D7AD7 /* AccountViewModel.swift */; };
 		07109BDF2ABDD5FE006D7AD7 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07109BDE2ABDD5FD006D7AD7 /* String+Ext.swift */; };
 		07109BE32ABDDA69006D7AD7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07109BE22ABDDA69006D7AD7 /* User.swift */; };
+		07D9896B2ABF15E4000E4619 /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D9896A2ABF15E4000E4619 /* OrderViewModel.swift */; };
+		07D9896E2ABF1AC2000E4619 /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D9896D2ABF1AC2000E4619 /* EmptyState.swift */; };
 		07D9F9F42ABB1E5E00ABE788 /* AppetizerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D9F9F32ABB1E5E00ABE788 /* AppetizerApp.swift */; };
 		07D9F9F62ABB1E5E00ABE788 /* AppetizerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D9F9F52ABB1E5E00ABE788 /* AppetizerTabView.swift */; };
 		07D9F9F82ABB1E5F00ABE788 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07D9F9F72ABB1E5F00ABE788 /* Assets.xcassets */; };
@@ -39,6 +41,8 @@
 		07109BDC2ABDD391006D7AD7 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		07109BDE2ABDD5FD006D7AD7 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		07109BE22ABDDA69006D7AD7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		07D9896A2ABF15E4000E4619 /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
+		07D9896D2ABF1AC2000E4619 /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
 		07D9F9F02ABB1E5E00ABE788 /* Appetizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appetizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07D9F9F32ABB1E5E00ABE788 /* AppetizerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerApp.swift; sourceTree = "<group>"; };
 		07D9F9F52ABB1E5E00ABE788 /* AppetizerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerTabView.swift; sourceTree = "<group>"; };
@@ -88,6 +92,7 @@
 		07109BCA2ABC7F27006D7AD7 /* OrderView */ = {
 			isa = PBXGroup;
 			children = (
+				07D9896A2ABF15E4000E4619 /* OrderViewModel.swift */,
 				07D9FA072ABB1F5900ABE788 /* OrderView.swift */,
 			);
 			path = OrderView;
@@ -161,6 +166,14 @@
 			path = Buttons;
 			sourceTree = "<group>";
 		};
+		07D9896C2ABF1AAF000E4619 /* Empty States */ = {
+			isa = PBXGroup;
+			children = (
+				07D9896D2ABF1AC2000E4619 /* EmptyState.swift */,
+			);
+			path = "Empty States";
+			sourceTree = "<group>";
+		};
 		07D9F9E72ABB1E5E00ABE788 = {
 			isa = PBXGroup;
 			children = (
@@ -213,6 +226,7 @@
 		07D9FA022ABB1EFE00ABE788 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				07D9896C2ABF1AAF000E4619 /* Empty States */,
 				07109BD72ABDCC55006D7AD7 /* Buttons */,
 				07109BD12ABC7FD5006D7AD7 /* Image */,
 				07109BD02ABC7FCD006D7AD7 /* Cells */,
@@ -307,6 +321,7 @@
 				07109BD92ABDCC65006D7AD7 /* APButton.swift in Sources */,
 				07D9FA132ABB344E00ABE788 /* AppetizerListViewModel.swift in Sources */,
 				07D9FA062ABB1F5300ABE788 /* AccountView.swift in Sources */,
+				07D9896B2ABF15E4000E4619 /* OrderViewModel.swift in Sources */,
 				07109BC32ABC6E70006D7AD7 /* LoadingView.swift in Sources */,
 				07109BC72ABC7946006D7AD7 /* RemoteImage.swift in Sources */,
 				07D9F9F62ABB1E5E00ABE788 /* AppetizerTabView.swift in Sources */,
@@ -314,6 +329,7 @@
 				07109BD62ABDC362006D7AD7 /* AppetizerDetailView.swift in Sources */,
 				07D9F9F42ABB1E5E00ABE788 /* AppetizerApp.swift in Sources */,
 				07D9FA152ABB363500ABE788 /* Alert.swift in Sources */,
+				07D9896E2ABF1AC2000E4619 /* EmptyState.swift in Sources */,
 				07D9FA042ABB1F4900ABE788 /* AppetizerListView.swift in Sources */,
 				07D9FA082ABB1F5900ABE788 /* OrderView.swift in Sources */,
 				07109BDD2ABDD391006D7AD7 /* AccountViewModel.swift in Sources */,

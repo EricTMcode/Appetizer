@@ -28,7 +28,7 @@ struct AppetizerListView: View {
                 .listStyle(.plain)
             }
             .task {
-                vm.getAppetizers()
+                await vm.getAppetizers()
             }
             
             .blur(radius: vm.isShowingDetail ? 20 : 0)

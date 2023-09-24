@@ -17,6 +17,7 @@ struct AppetizerListView: View {
             NavigationStack {
                 List(vm.appetizers) { appetizer in
                     AppetizerListCell(appetizer: appetizer)
+                        .listRowSeparator(.visible)
                         .onTapGesture {
                             vm.selectedAppetizer = appetizer
                             vm.isShowingDetail = true

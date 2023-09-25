@@ -22,3 +22,13 @@ extension View {
         self.modifier(StandardButtonStyle())
     }
 }
+
+struct ListCellImageStyle: ViewModifier {
+    
+    func body(content: Content) -> some View {
+        content
+            .scaledToFit()
+            .frame(width: 120, height: 90)
+            .cornerRadius(8)
+    }
+}
